@@ -1,0 +1,9 @@
+.replit
+.upm
+.config
+.cache
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+*.log
