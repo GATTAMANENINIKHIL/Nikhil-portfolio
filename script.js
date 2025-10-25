@@ -64,7 +64,7 @@ function updateActiveNavLink() {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Full Stack Developer", "Creative Designer", "Problem Solver", "Tech Enthusiast"];
+const textArray = ["Web Developer", "Fresher"];
 const typingDelay = 100;
 const erasingDelay = 50;
 const newTextDelay = 2000;
@@ -138,49 +138,32 @@ function animateOnScroll() {
 
 const projectData = {
     project1: {
-        title: "E-Commerce Platform",
-        description: "A comprehensive online shopping platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration with Stripe, order management, and admin dashboard.",
-        image: "https://via.placeholder.com/800x400",
-        technologies: ["React", "Node.js", "MongoDB", "Stripe API", "Redux", "Express"],
+        title: "Portfolio Website",
+        description: "A responsive personal portfolio website built with HTML, CSS, and JavaScript. Features include smooth scrolling, interactive elements, project showcase, and contact information.",
+        image: "74d6c531-d7ef-442c-a7e7-69cd427e50ba.jpg",
+        technologies: ["HTML", "CSS", "JavaScript"],
         features: [
-            "Secure user authentication and authorization",
-            "Dynamic product catalog with search and filters",
-            "Shopping cart with real-time updates",
-            "Stripe payment integration",
-            "Order tracking and history",
-            "Admin panel for product management"
+            "Responsive design for all devices",
+            "Smooth scrolling navigation",
+            "Interactive project modals",
+            "Contact form integration",
+            "Modern UI/UX design"
         ],
         github: "#",
         demo: "#"
     },
     project2: {
-        title: "Task Management App",
-        description: "A collaborative project management tool that helps teams stay organized and productive. Features real-time collaboration, task assignments, progress tracking, and team communication.",
-        image: "https://via.placeholder.com/800x400",
-        technologies: ["Vue.js", "Firebase", "WebSocket", "Vuex", "CSS3"],
+        title: "Student Info Management System",
+        description: "A comprehensive web application for managing student information with full CRUD operations. Built with HTML, CSS, JavaScript frontend and Node.js backend for data management.",
+        image: "top-6-benefits-of-student-information-management-system-sims-1.jpg",
+        technologies: ["HTML", "CSS", "JavaScript", "Node.js","Fire Base"],
         features: [
-            "Real-time collaboration with WebSocket",
-            "Drag-and-drop task management",
-            "Team member assignments and notifications",
-            "Progress tracking with visual charts",
-            "File attachments and comments",
-            "Mobile-responsive design"
-        ],
-        github: "#",
-        demo: "#"
-    },
-    project3: {
-        title: "Social Media Dashboard",
-        description: "An analytics dashboard for tracking social media performance across multiple platforms. Provides insights, trends, and detailed metrics to help improve social media strategy.",
-        image: "https://via.placeholder.com/800x400",
-        technologies: ["Angular", "D3.js", "Python", "Flask", "PostgreSQL"],
-        features: [
-            "Multi-platform integration (Twitter, Facebook, Instagram)",
-            "Interactive data visualizations with D3.js",
-            "Custom date range analysis",
-            "Engagement metrics and trends",
-            "Automated report generation",
-            "Export data to PDF and CSV"
+            "Create, Read, Update, Delete student records",
+            "Student registration and profile management",
+            "Search and filter students by various criteria",
+            "Data validation and error handling",
+            "RESTful API endpoints",
+            "Responsive user interface"
         ],
         github: "#",
         demo: "#"
@@ -188,7 +171,7 @@ const projectData = {
     project4: {
         title: "Weather Forecast App",
         description: "A beautiful and intuitive weather application that provides accurate forecasts for any location. Features include current conditions, 7-day forecasts, and detailed weather metrics.",
-        image: "https://via.placeholder.com/800x400",
+        image: "original-7490c73afd13e8a2523fbe2c34f6853b.webp",
         technologies: ["JavaScript", "OpenWeather API", "CSS3", "Chart.js"],
         features: [
             "Real-time weather data from OpenWeather API",
@@ -270,11 +253,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const downloadBtn = document.querySelector('.download-btn');
-if (downloadBtn) {
-    downloadBtn.addEventListener('click', function() {
-        alert('Resume download feature - Connect this to your actual PDF resume file!');
-    });
-}
+
 
 window.addEventListener('load', animateOnScroll);
